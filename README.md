@@ -10,6 +10,9 @@ E-commerce
 
 ## Реализация проекта:
 - Точка входа public/index.php;
-- Использованные паттерны: MVC, ActiveRecord, Singletone, Repository, Facade;
-- Шаблонизатор: Twig;
+**Стек Backend (bold)**
 - PHP 7.3, MySQL.
+- Использованные паттерны: MVC, ActiveRecord, Singletone, Repository, Facade;
+**Стек Frontend (bold)**
+- Шаблонизатор: Twig;
+- JavaScript;
