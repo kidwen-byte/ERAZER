@@ -7,12 +7,12 @@
 
 ## Сфера бизнеса: 
 E-commerce
-fdgfshfrgtxdhngdhytjnhg
+
 ## Реализация проекта:
 - Точка входа public/index.php;
-**Стек Backend (bold)**
+Стек Backend (bold)
 - PHP 7.3, MySQL.
 - Использованные паттерны: MVC, ActiveRecord, Singletone, Repository, Facade;
-**Стек Frontend (bold)**
+Стек Frontend (bold)
 - Шаблонизатор: Twig;
 - JavaScript; 
