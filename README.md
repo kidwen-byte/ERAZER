@@ -15,4 +15,4 @@ E-commerce
 - Использованные паттерны: MVC, ActiveRecord, Singletone, Repository, Facade;
 **Стек Frontend (bold)**
 - Шаблонизатор: Twig;
-- JavaScript;
+- JavaScript; 
