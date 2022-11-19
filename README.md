@@ -7,7 +7,7 @@
 
 ## Сфера бизнеса: 
 E-commerce
-
+fdgfshfrgtxdhngdhytjnhg
 ## Реализация проекта:
 - Точка входа public/index.php;
 **Стек Backend (bold)**
