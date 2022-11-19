@@ -1,6 +1,5 @@
 <?php
 
-//Route::get('/', 'SimplePage.Index');
 Route::get('/', 'Filteres.Index');
 Route::post('/getModels', 'Filteres.Models');
 Route::post('/getAttributes', 'Filteres.Attributes');
@@ -12,7 +11,7 @@ Route::get('/catalog', 'Product.Index');
 Route::get('/catalog/{id}', 'Product.Card');
 Route::post('/api/news/getItems', 'News.ApiDynamicList');
 Route::get('/delivery', 'Delivery.Index');
-//Route::get('/news/{id}','News.Card');
+
 Route::match(['POST', 'GET'], '/login', 'Auth.Login');
 Route::match(['POST', 'GET'], '/profile', 'Auth.Profile');
 Route::post('/register', 'Auth.Register');
