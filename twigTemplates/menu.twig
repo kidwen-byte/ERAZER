@@ -1,0 +1,61 @@
+<header class="site-header container">
+    <div class="header-logo">
+        <a href="/" class="header-logo-link">
+
+            <svg class="header-logo-svg transition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 135">
+                <polygon class="a" points="189 0 157.5 94.5 171 135 216 0 189 0"/>
+                <path class="a" d="M666.84,286.1a54,54,0,0,0-45.24-53.28l-8.76,26.28a27,27,0,0,1,8.53,52.62l.47,1.38h0l18,54h27l-14.68-44A53.76,53.76,0,0,0,666.84,286.1Z" transform="translate(-171.84 -232.1)"/>
+                <polygon class="a" points="216 81 234 135 247.5 94.5 229.5 40.5 216 81"/>
+                <path class="a" d="M270.6,232.82l-8.76,26.28a27,27,0,0,1,8.53,52.62l.47,1.38,18,54h27l-14.68-44a54,54,0,0,0-30.56-90.27Z" transform="translate(-171.84 -232.1)"/>
+                <polygon class="a" points="0 135 63 135 72 108 0 108 0 135"/>
+                <polygon class="a" points="0 81 63 81 72 54 0 54 0 81"/>
+                <polygon class="a" points="351 27 414 27 423 0 360 0 351 27"/>
+                <polygon class="a" points="351 135 414 135 423 108 360 108 351 135"/>
+                <polygon class="a" points="351 81 414 81 423 54 360 54 351 81"/>
+                <polygon class="a" points="0 27 63 27 72 0 0 0 0 27"/>
+                <polygon class="a" points="261 0 270 27 297 27 288 54 315 54 324 27 333 0 306 0 261 0"/>
+                <polygon class="a" points="306 81 279.35 81 279.35 79.94 270 108 261 135 288 135 324 135 333 108 297 108 306 81"/>
+            </svg>
+
+        </a>
+    </div>
+    <div class="header-right-block">
+        <div class="header-right-block-cart">
+            <a id="header_cart" class="header-right-block-cart-link" href="/cart">
+
+                <svg class="header-right-block-cart-svg transition" viewBox="50 50 462 462" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M397.78,316H192.65A15,15,0,0,1,178,304.33L143.46,153.85a15,15,0,0,1,14.62-18.36H432.35A15,15,0,0,1,447,153.85L412.4,304.33A15,15,0,0,1,397.78,316ZM204.59,286H385.84l27.67-120.48H176.91Z"/>
+                    <path d="M222,450a57.48,57.48,0,1,1,57.48-57.48A57.54,57.54,0,0,1,222,450Zm0-84.95a27.48,27.48,0,1,0,27.48,27.47A27.5,27.5,0,0,0,222,365.05Z"/>
+                    <path d="M368.42,450a57.48,57.48,0,1,1,57.48-57.48A57.54,57.54,0,0,1,368.42,450Zm0-84.95a27.48,27.48,0,1,0,27.48,27.47A27.5,27.5,0,0,0,368.42,365.05Z"/>
+                    <path d="M158.08,165.49a15,15,0,0,1-14.23-10.26L118.14,78H70.7a15,15,0,1,1,0-30H129a15,15,0,0,1,14.23,10.26l29.13,87.49a15,15,0,0,1-14.23,19.74Z"/>
+                </svg>
+
+            </a>
+            <div id="cart_counter" class="header-right-block-cart-count" class="count_in_cart">{{ countInCart|default(0) }}</div>
+        </div>
+        <div class="header-right-block-login">
+            {% if isAuth %}
+                <a class="right-block-login-link transition" id="user_name" href="/profile">{{ userName }}</a>
+            {% else %}
+                <a class="right-block-login-link transition" href="/login">Личный кабинет</a>
+            {% endif %}
+        </div>
+    </div>
+</header>
+<div class="header-panel">
+    <div class="header-panel-blocks container">
+        <nav class="header-panel-menu">
+            <a href="/" class="header-panel-menu-item transition">Главная</a>
+            <a href="/catalog" class="header-panel-menu-item transition">Каталог</a>
+            <a href="/delivery" class="header-panel-menu-item transition">Доставка</a>
+            {% if isAdmin %}
+                <a href="/admin" class="header-panel-menu-item transition">Админка</a>
+            {% endif %}
+        </nav>
+        <a href="/search" class="header-panel-search">
+            <svg class="header-panel-search-svg transition" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
+                <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"/>
+            </svg>
+        </a>
+    </div>
+</div>

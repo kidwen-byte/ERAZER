@@ -1,0 +1,7 @@
+{% for value in models %}
+	<p>{{ value.name }}</p>
+	<button>
+		<a href="/admin/models/edit/{{ value.id }}">Редактировать</a>
+	</button>
+	<button>Удалить</button>
+{% endfor %}

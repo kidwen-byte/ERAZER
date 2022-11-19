@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 135">
+    <defs>
+        <style>.a{fill:#fff;}</style>
+    </defs>
+    <polygon class="a" points="189 0 157.5 94.5 171 135 216 0 189 0"/>
+    <path class="a" d="M666.84,286.1a54,54,0,0,0-45.24-53.28l-8.76,26.28a27,27,0,0,1,8.53,52.62l.47,1.38h0l18,54h27l-14.68-44A53.76,53.76,0,0,0,666.84,286.1Z" transform="translate(-171.84 -232.1)"/>
+    <polygon class="a" points="216 81 234 135 247.5 94.5 229.5 40.5 216 81"/>
+    <path class="a" d="M270.6,232.82l-8.76,26.28a27,27,0,0,1,8.53,52.62l.47,1.38,18,54h27l-14.68-44a54,54,0,0,0-30.56-90.27Z" transform="translate(-171.84 -232.1)"/>
+    <polygon class="a" points="0 135 63 135 72 108 0 108 0 135"/>
+    <polygon class="a" points="0 81 63 81 72 54 0 54 0 81"/>
+    <polygon class="a" points="351 27 414 27 423 0 360 0 351 27"/>
+    <polygon class="a" points="351 135 414 135 423 108 360 108 351 135"/>
+    <polygon class="a" points="351 81 414 81 423 54 360 54 351 81"/>
+    <polygon class="a" points="0 27 63 27 72 0 0 0 0 27"/>
+    <polygon class="a" points="261 0 270 27 297 27 288 54 315 54 324 27 333 0 306 0 261 0"/>
+    <polygon class="a" points="306 81 279.35 81 279.35 79.94 270 108 261 135 288 135 324 135 333 108 297 108 306 81"/>
+</svg>

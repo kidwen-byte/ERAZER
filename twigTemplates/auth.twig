@@ -1,0 +1,29 @@
+<h2>{{ header }}</h2>
+<div class="auth-form">
+<p class="error_message">{{ message }}</p>    
+<h3>Вход</h3>
+<form class="login-form" action="/login" method="post">
+    <input class="form-item" type="text" name="login" placeholder="Логин" required>
+    <input class="form-item" type="password" name="password" placeholder="Пароль" required autocomplete="off">
+    <div class="auth-form__bottom">
+        <div class="login-form-save form-item">
+             <label class="login-form-save-text" for='save'>Запомнить</label>
+             <input class="login-form-save-checkbox" type='checkbox' name='save' id='save'>
+        </div>
+        <button type="submit" class="black-button selection-form-button">Вход</button>
+    </div>
+</form>
+</div>
+<br>
+<div class="auth-form">
+<p class="error_message">{{ message2 }}</p>    
+<h3>Регистрация</h3>
+<form class="login-form" action="/register" method="post">
+    <input class="form-item" type="text" name="name" placeholder="Имя" required>
+    <input class="form-item" type="text" name="login" placeholder="Логин" required>
+    <input class="form-item" type="password" name="password" placeholder="Пароль" required autocomplete="off">
+    <div class="auth-form__bottom">
+        <button type="submit" class="black-button selection-form-button">Регистрация</button>
+    </div>
+</form>
+</div>

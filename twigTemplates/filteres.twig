@@ -1,0 +1,33 @@
+<div class="content-selection">
+	<div class="index-info-block">
+		<h3>Удобный подбор запчастей</h3>
+		<h1>Подбор расходников</h1>
+		<div class="info-block-text">
+			Просто выбирайте в меню модель своего мотоцикла чтобы увидеть все расходники,
+			<br>
+			или обращайтесь к нашим консультантам для подбора звезд, цепей, фильтров, колодок и прочего.
+			<br>
+			Профессиональные консультанты по подбору всегда на связи.
+		</div>
+	</div>
+</div>
+<section class="content-selection grey-section">
+	<div class="container">
+		<h2>Подбор запчастей по вашему мотоциклу</h2>
+		<select name="select__brand selection-form-select" id="select-1">
+			<option selected hidden>Марка</option>
+			{% for value in brand %}
+				<option value="{{ value.id }}" class="brand selection-form-option">{{ value.name }}</option>
+			{% endfor %}
+		</select>
+		<select name="select__model selection-form-select" id="select-2" disabled>
+			<option class="selection-form-option" selected hidden>Модель</option>
+		</select>
+		<select name="select__volume selection-form-select" id="select-3" disabled>
+			<option selected hidden class="selection-form-option">Объём</option>
+		</select>
+		<button class="filteres selection-form-button" disabled>Подобрать</button>
+		<div class="products"></div>
+		<script src="/js/filteres.js"></script>
+	</div>
+</section>

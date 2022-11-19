@@ -1,0 +1,36 @@
+    <div class="catalog">
+        <svg id="catalog-menu-closer" class="catalog-menu-close" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path class="catalog__svg-cls-1" d="M20.6,1.2A1,1,0,0,0,19.73,1l-14,4A1,1,0,0,0,5,6V26a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V2A1,1,0,0,0,20.6,1.2Z"/>
+            <path class="catalog__svg-cls-2" d="M6.06,7a1,1,0,0,1,.73-1l14-4A.74.74,0,0,1,21,2V2a1,1,0,0,0-.4-.8A1,1,0,0,0,19.73,1l-14,4A1,1,0,0,0,5,6V26a1,1,0,0,0,1,1h.06Z"/>
+            <path class="catalog__svg-cls-3" d="M26.05,6l-20-1a1,1,0,0,0-.74.28A1,1,0,0,0,5,6V29a1,1,0,0,0,1,1l20,1H26a1,1,0,0,0,.69-.28A1,1,0,0,0,27,30V7A1,1,0,0,0,26.05,6Z"/>
+            <path class="catalog__svg-cls-4" d="M6.88,7.5a1,1,0,0,1,.31-.72,1,1,0,0,1,.73-.28L27,7.46V7a1,1,0,0,0-.95-1l-20-1a1,1,0,0,0-.74.28A1,1,0,0,0,5,6V29a1,1,0,0,0,1,1l.93.05Z"/>
+            <path class="catalog__svg-cls-4" d="M16.44,11.19a7,7,0,1,0,7,7A7,7,0,0,0,16.44,11.19Zm4.9,6H19.8A12.6,12.6,0,0,0,19.22,14,5,5,0,0,1,21.34,17.19Zm-4.9,6c-.36-.07-1.18-1.52-1.36-4H17.8C17.62,21.67,16.8,23.12,16.44,23.19Zm-1.36-6c.18-2.49,1-3.94,1.35-4h0c.36.06,1.18,1.51,1.36,4ZM13.65,14a13.06,13.06,0,0,0-.58,3.15H11.54A5,5,0,0,1,13.65,14Zm-2.11,5.15h1.53a13.25,13.25,0,0,0,.58,3.15A5,5,0,0,1,11.54,19.19Zm7.68,3.15a12.77,12.77,0,0,0,.58-3.15h1.54A5.05,5.05,0,0,1,19.22,22.34Z"/>
+            <path class="catalog__svg-cls-5" d="M16,11a7,7,0,1,0,7,7A7,7,0,0,0,16,11Zm4.9,6H19.36a12.32,12.32,0,0,0-.58-3.15A5,5,0,0,1,20.9,17ZM16,23c-.36-.06-1.18-1.51-1.36-4h2.72C17.18,21.49,16.36,22.94,16,23Zm-1.36-6c.18-2.49,1-3.94,1.36-4h0c.36.06,1.18,1.51,1.36,4Zm-1.42-3.15A12.32,12.32,0,0,0,12.64,17H11.1A5,5,0,0,1,13.22,13.85ZM11.1,19h1.54a12.32,12.32,0,0,0,.58,3.15A5,5,0,0,1,11.1,19Zm7.68,3.15A12.32,12.32,0,0,0,19.36,19H20.9A5,5,0,0,1,18.78,22.15Z"/>
+            <path class="catalog__svg-cls-6" d="M19.05,11.71a7,7,0,0,1-3.89,12.81,6.91,6.91,0,0,1-3.05-.71A6.93,6.93,0,0,0,16,25a7,7,0,0,0,3.05-13.29Z"/>
+        </svg>
+
+        <div class="catalog-menu catalog-menu-closed">
+            <div id="1" class="catalog-menu-item">Защита для мотоцикла</div>
+            <div id="2" class="catalog-menu-item">Расходные материалы</div>
+            <div id="3" class="catalog-menu-item">Масло и мотохимия</div>
+            <div id="4" class="catalog-menu-item">Мотозапчасти</div>
+        </div>
+    </div>
+</div>
+    <div id="catalog" class="products">
+<script src="/js/catalog.js"></script>
+<script>
+    let catalog = new Products('catalog', {{ page_size }});
+
+    document.addEventListener("DOMContentLoaded", event => {
+        catalog.fillVisible();
+    });
+
+    document.querySelectorAll('.catalog-menu-item').forEach( el => {
+        el.addEventListener('click', event => {
+            catalog.categories_id = el.id;
+            catalog.clearList();
+            catalog.fillVisible();
+        })
+    })
+</script>
